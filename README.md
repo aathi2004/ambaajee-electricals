@@ -6,7 +6,7 @@ A modern, fully responsive landing page for **Sri Ambaajee Electricals**, Chenna
 
 ## 🌐 Live Demo
 
-[https://ambaajee-electricals.vercel.app](https://ambaajee-electricals.vercel.app)
+[https://ambaajee-electricals.vercel.app](https://ambaajee-electricals.vercel.app/)
 
 ---
 
