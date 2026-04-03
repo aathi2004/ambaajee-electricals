@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sri Ambaajee Electricals — Landing Page
 
 Built with **React 18 + Vite + Tailwind CSS v3**
@@ -57,3 +58,6 @@ npm run build
 | Contact details         | `src/data/index.js`       |
 | Images / logos          | `src/assets/images.js`    |
 | Colors / fonts          | `tailwind.config.js`      |
+=======
+# ambaajee-electricals
+>>>>>>> c6997f561cd46f67d9ca55ee52d20cfc6f93695a
