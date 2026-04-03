@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
           <div className="grid grid-cols-3 gap-6 flex-1">
             {desktopVisible.map((banner, i) => (
               <div key={i} className="carousel-item rounded overflow-hidden">
-                <img src={banner.img} alt={banner.title} className="w-full object-cover block" style={{ height: 380 }} />
+                <img src={banner.img} alt={banner.title} className="w-full object-cover object-top block" style={{ height: 380 }} />
               </div>
             ))}
           </div>
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
         <div className="md:hidden">
           <div className="carousel-item rounded overflow-hidden mb-5">
             <img src={whyBanners[start].img} alt={whyBanners[start].title}
-              className="w-full object-cover block" style={{ height: 260 }} />
+              className="w-full object-cover object-top block" style={{ height: 340 }} />
           </div>
           <div className="flex items-center justify-between mb-4">
             <ArrowButton onClick={prev} direction="left" />
