@@ -18,13 +18,18 @@ const WhyChooseUs = () => {
           subtitle="Genuine Brands. Bulk Stock. Site-Ready Delivery."
         />
 
-        {/* Desktop: 3 visible */}
+        {/* Desktop: 3 visible — fixed height, object-top so title text shows */}
         <div className="hidden md:flex items-center gap-4">
           <ArrowButton onClick={prev} direction="left" />
           <div className="grid grid-cols-3 gap-6 flex-1">
             {desktopVisible.map((banner, i) => (
-              <div key={i} className="carousel-item rounded overflow-hidden">
-                <img src={banner.img} alt={banner.title} className="w-full object-cover object-top block" style={{ height: 380 }} />
+              <div key={i} className="rounded overflow-hidden">
+                <img
+                  src={banner.img}
+                  alt={banner.title}
+                  className="w-full object-cover object-top block"
+                  style={{ height: 380 }}
+                />
               </div>
             ))}
           </div>
@@ -40,11 +45,15 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Mobile: single */}
+        {/* Mobile: natural aspect ratio — no crop, full image visible */}
         <div className="md:hidden">
-          <div className="carousel-item rounded overflow-hidden mb-5">
-            <img src={whyBanners[start].img} alt={whyBanners[start].title}
-              className="w-full object-cover object-top block" style={{ height: 340 }} />
+          <div className="rounded overflow-hidden mb-5">
+            <img
+              src={whyBanners[start].img}
+              alt={whyBanners[start].title}
+              className="w-full block"
+              style={{ height: 'auto' }}
+            />
           </div>
           <div className="flex items-center justify-between mb-4">
             <ArrowButton onClick={prev} direction="left" />
@@ -54,7 +63,8 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="flex justify-center mt-4 md:mt-10">
-          <a href="#" className="bg-brand-red text-white font-semibold text-[14px] md:text-[15px] px-10 py-3.5 hover:bg-brand-red-dark transition-colors rounded-sm">
+          <a href="#"
+            className="bg-brand-red text-white font-semibold text-[14px] md:text-[15px] px-10 py-3.5 hover:bg-brand-red-dark transition-colors rounded-sm">
             Download Our Brochure
           </a>
         </div>
